@@ -1,0 +1,330 @@
+@import 'utilities.css';
+:root
+    {
+        --primary: #F7444E;
+        --dark: #002C3e;
+        --pure:#002C3e;
+        --ternary:#898989;
+        --light:#F2F2F2;
+        --secondary: black;
+        --bg: #FFFFFF;
+        --hi: #F7444E;
+    }
+
+body
+    {
+        font-family: 'Poppins',sans-serif;
+
+    }
+
+html
+    {
+        scroll-behavior: smooth;   
+    }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+}
+
+header  
+    {
+        background: var(--bg);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 93%, 0 100%);
+    }
+
+.container
+    {
+        max-width: 1152px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    
+header nav .left a
+    {
+        color:var(--hi);
+        text-decoration: none;
+        margin-right: 2rem;
+        text-transform: uppercase;
+        transition: all .3s ease;
+    }
+
+header nav .left a:hover
+    {
+        /*color: var(--primary);   #3DCFD3*/
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+header nav
+    {
+        padding: 2rem 0;
+    }
+
+header nav .branding
+    {
+        margin-right: 3rem;
+    }
+
+.myself
+    {
+        padding-top: 2rem;
+        padding-bottom: 6rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+.myself .left img   
+    {
+        width: 400px;
+    }
+
+.myself .right
+    {
+        color: var(--pure);
+        margin-left: 1.6rem;
+    }
+
+.myself .right h6
+    {
+        color: var(--primary);
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+    
+.myself .right h1
+    {
+        font-size: 4rem;
+        font-weight: 100;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+
+    }
+
+.myself .right
+    {
+        margin-top: 2rem;
+    }
+
+.myself .right h1 span
+    {
+        color: var(--primary);
+    }
+
+.myself .right p
+    {
+        line-height: 1.9;
+        margin-bottom: 2rem;    
+    }
+
+section
+    {
+        padding: 6rem 0;
+    }
+
+.about img   
+    {
+        width: 400px;
+    }
+
+.about h1
+    {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+.about h1 span
+    {
+        color: var(--primary);
+    }
+
+.about h3 span
+    {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+section.about p
+    {
+        font-family: sans-serif;
+        color: var(--ternary);
+        line-height: 1.9;
+        padding-bottom: 1rem;
+    }
+
+.dim img
+    {
+        height: 25px;
+        width: 25px;
+    }
+
+.section-heading
+    {
+        color: var(--secondary);
+        text-align: center;
+        margin-bottom: 1rem;
+        line-height: 0.5;
+
+    }
+
+.section-heading + p
+    {
+        color: var(--ternary);
+        text-align: center;
+        margin-bottom: 4rem;
+        line-height: 0.5;
+        
+    }
+
+section.services
+    {
+        background: var(--light);
+    }
+section.services .cards
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2rem;
+    }
+
+section.services .cards .card
+    {
+        background: var(--hi);
+        padding: 3rem 2rem;
+        position: relative;
+        text-align: center;
+        transition: all .3s ease;
+    }
+
+section.services .cards .card img
+    {
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+section.services .cards .card h2
+    {
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--dark);
+    }
+
+section.services .cards .card p
+    {
+        color: var(--bg);
+        line-height: 1.6rem;
+    }
+
+section.services .cards .card:hover
+    {
+        background: var(--bg);
+    }
+
+section.services .cards .card:hover h2, section.services .cards .card:hover p
+    {
+        color: var(--pure);
+    }
+
+section.freelancer
+    {
+        text-align: center;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/freelance.jpg);
+        color: var(--bg);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
+        padding-bottom: 9.3rem;
+    }
+
+section.freelancer h1
+    {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+section.freelancer p
+    {
+        margin-bottom: 2rem;
+    }
+
+section.contact .cards
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 3rem;
+    }
+
+section.contact .cards .card
+    {
+        text-align: center;
+    }
+
+section.contact .cards .card img
+    {
+        margin-bottom: 3rem;
+    }
+
+section.contact .cards .card h1
+    {
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+section.contact .cards .card h6
+    {
+        font-size: 1rem;
+        color: var(--ternary);
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+
+section.contact .input-form
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+section.contact .input-form1
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        
+    }
+
+section.contact .input-form1 input
+    {
+        margin-bottom: 2rem;
+    }
+
+section.contact input
+    {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+section.contact .input-form1 textarea
+    {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+footer
+    {
+        background: var(--hi);
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+footer .copyright
+{
+    color: var(--bg);
+}
+
+
